@@ -1,0 +1,63 @@
+The output expect for A records is as follows:
+Command: ./mydig www.facbook.com A
+
+Output:
+QUESTION:
+www.facebook.com         IN      A
+
+
+ANSWER:
+www.facebook.com.        3600    IN      CNAME   star-mini.c10r.facebook.com.    
+
+star-mini.c10r.facebook.com.     60      IN      A       157.240.241.35          
+
+
+
+Query time:  1108.1628799438477  msec
+WHEN:  Thu Sep 23 17:04:20 2021
+MSG SIZE rcvd:  237
+
+The output expected for NS records is as follows:
+Command: ./mydig amazon.com NS
+
+Output:
+QUESTION:
+amazon.com       IN      NS
+
+
+ANSWER:
+amazon.com.      3600    IN      NS      pdns1.ultradns.net.
+amazon.com.      3600    IN      NS      ns4.p31.dynect.net.
+amazon.com.      3600    IN      NS      ns3.p31.dynect.net.
+amazon.com.      3600    IN      NS      ns2.p31.dynect.net.
+amazon.com.      3600    IN      NS      ns1.p31.dynect.net.
+amazon.com.      3600    IN      NS      pdns6.ultradns.co.uk.   
+
+
+
+Query time:  886.5201473236084  msec
+WHEN:  Thu Sep 23 17:05:23 2021
+MSG SIZE rcvd:  369
+
+The output expected for MX records is as follows:
+Command:
+ ./dig paypal.com MX
+
+Output: 
+QUESTION:
+paypal.com       IN      MX
+
+
+ANSWER:
+paypal.com.      3600    IN      MX      10      mx2.paypalcorp.com.
+paypal.com.      3600    IN      MX      10      mx1.paypalcorp.com.     
+
+
+
+Query time:  483.6606979370117  msec
+WHEN:  Thu Sep 23 17:06:11 2021
+MSG SIZE rcvd:  373
+
+
+
+
